@@ -1,0 +1,371 @@
+/* App Fonts */
+
+@font-face {
+    font-family: "Airbnb";
+    src: url("../fonts/AirbnbCereal_W_Bk.otf") format("openType");
+}
+@font-face {
+    font-family: "Airbnb Medium";
+    src: url("../fonts/AirbnbCereal_W_Md.otf") format("openType");
+}
+@font-face {
+    font-family: "Airbnb Bold";
+    src: url("../fonts/AirbnbCereal_W_XBd.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+/* Normalize Css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0; /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+/* Start Project */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Airbnb";
+}
+
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.top-bar {
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f1f1f1;
+}
+
+.top-bar__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar__link {
+    color: #686868;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.top-bar__link:nth-child(1) {
+    margin-right: 1rem;
+    border-right: 1px solid #686868;
+    padding-right: 1rem;
+}
+
+
+.header {
+
+}
+
+.header-nav {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6rem;
+}
+
+.nav__content-logo {
+    max-width: 5.8rem;
+}
+
+.nav__content-logo__img {
+    max-width: 100%;
+}
+
+.nav__content-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30rem;
+    height: 3.2rem;
+    border-radius: 6rem;
+    border: 1px solid #e0e0e0;
+    padding: 0 0.2rem 0 1rem;
+}
+
+.nav__content-input {
+    border-radius: 5rem;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.nav__content-search svg {
+    width: 2.9rem;
+    fill: #fff;
+    background-color: #ff2f54;
+    border-radius: 3rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav__content-search svg:hover {
+    background-color: rgb(255, 90, 120);
+}
+
+.nav__content-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__content-links__link {
+    color: #686868;
+    text-decoration: none;
+}
+
+.nav__content-links__icon {
+    width: 1.5rem;
+    fill: #686868;
+    cursor: pointer;
+}
+
+.nav__content-links__user {
+    background-color: #e0e0e0;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__content-links__user svg{
+    width: 1.4rem;
+    fill: #686868;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav__content-links__user svg:hover {
+    fill: #000;
+}
+
+
+
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
