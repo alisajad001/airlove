@@ -341,7 +341,44 @@ body {
     fill: #000;
 }
 
+.header-icons {
+}
 
+.icons__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+}
+
+.icons__content__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.icons-content__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons__content__icon-img {
+    max-width: 1.6rem;
+    margin: 0;
+}
+
+.icons-content__text {
+    margin-top: 0.7rem;
+}
+
+.icons__content-filter {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
 
 
 /* Project Responsive */
