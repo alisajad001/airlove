@@ -466,6 +466,7 @@ body {
 
 .card__price {
     color: #000;
+    text-decoration: none;
 }
 
 .footer{
@@ -497,6 +498,15 @@ body {
     color: #464646;
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+.footer .mobile__menu {
+    flex-basis: 100%;
+}
+
+.footer .mobile__menu ul{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -561,6 +571,10 @@ body {
     }
 
     .footer__links {
+        justify-content: space-between;
+    }
+
+    .footer__links:nth-child(2) {
         display: none;
     }
 
