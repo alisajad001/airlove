@@ -271,6 +271,14 @@ body {
     padding-right: 1rem;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    top: 0;
+}
+
 .header-nav {
     border-bottom: 1px solid #e0e0e0;
 }
@@ -360,6 +368,10 @@ body {
     fill: #000;
 }
 
+.header-icons {
+    border-bottom: 1px solid #e0e0e0;
+}
+
 .icons__content {
     display: flex;
     justify-content: space-between;
@@ -411,6 +423,7 @@ body {
 
 .main {
     padding: 2rem 0 4rem 0;
+    margin-top: 10rem;
 }
 
 .main-cards {
@@ -496,14 +509,16 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-
-
     .nav__content-links__link {
         font-size: 0.9rem;
     }
 
     .nav__content-search {
         flex-basis: 20rem;
+    }
+
+    .main {
+        margin-top: 13rem;
     }
 }
 
